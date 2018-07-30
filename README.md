@@ -24,4 +24,10 @@ npm run unit
 npm test
 ```
 
+## BUG
+
+```npm run test
+
+error: Error in config.errorHandler: "TypeError: Cannot read property '$el' of undefined"
+```
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
