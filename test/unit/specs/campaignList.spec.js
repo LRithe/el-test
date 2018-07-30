@@ -1,7 +1,9 @@
 import {mount, createLocalVue} from '@vue/test-utils'
 import CampaignList from '../../../src/views/campaign_list.vue'
+import ElementUI from 'element-ui'
 
 const localVue = createLocalVue()
+localVue.use(ElementUI)
 
 describe('CampaignList', () => {
 
@@ -10,7 +12,6 @@ describe('CampaignList', () => {
       push: () => {
       }
     }
-    const sessionStorage = window.sessionStorage
     const wrapper = mount(CampaignList, {
       localVue,
       mocks: {
